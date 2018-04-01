@@ -1300,7 +1300,7 @@ void ci_service(void)
 			}
 #endif
 			if(found == 0)
-				wprintf("%s port has no EDID capabilities\n", token);
+				wprintf("%s is not an output port\n", token);
 #ifdef CSR_CAS_BASE
 		} else if(strcmp(token, "cas") == 0) {
 			token = get_token(&str);
